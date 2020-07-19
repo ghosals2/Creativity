@@ -6,9 +6,13 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 @SpringBootApplication
 public class BillApplication extends SpringBootServletInitializer{
+	public BillApplication() {
+    super();
+    setRegisterErrorPageFilter(false); 
+}
 
 	public static void main(String[] args) {
-		setRegisterErrorPageFilter(false);
+		
 		SpringApplication.run(BillApplication.class, args);
 		System.out.println("hello");
 	}
