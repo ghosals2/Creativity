@@ -8,6 +8,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 public class BillApplication extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
+		setRegisterErrorPageFilter(false);
 		SpringApplication.run(BillApplication.class, args);
 		System.out.println("hello");
 	}
